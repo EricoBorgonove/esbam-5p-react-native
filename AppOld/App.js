@@ -1,13 +1,13 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
-//import HomeVivara from './src/screens/HomeVivara';
-import HomeScreen from './src/screens/HomeScreen';
+
+import { NavigationContainer } from "@react-navigation/native";
+
+import AppDrawer from './AppDrawer';
 
 export default function App(){
-    return (
-        <SafeAreaView style={{flex:1}}>
-            <HomeScreen/>
-
-        </SafeAreaView>
+    return(
+        <NavigationContainer>
+            <AppDrawer/>
+        </NavigationContainer>
     )
 }
